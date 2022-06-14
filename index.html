@@ -98,6 +98,12 @@
             }
 
         }
+            function getMsisdn() {
+            var msisdn = Ayoba.getMsisdn();
+            var input = document.querySelector('#cellphone');
+            input.value = msisdn;
+            return msisdn;
+            }
 
         defer(function () {
             function getMsisdn() {

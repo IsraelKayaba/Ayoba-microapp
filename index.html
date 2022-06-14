@@ -99,12 +99,13 @@
 
         }
 
-        defer( function getMsisdn() {
+        defer( function (){
+            function getMsisdn() {
             var msisdn = Ayoba.getMsisdn();
             var input = document.querySelector('#cellphone');
             input.value = msisdn;
             return msisdn;
-           
+            }
             console.log(Object.getOwnPropertyNames(Ayoba).join(', '))
             console.log('Msisdn: ');
             console.log(Ayoba.getMsisdn())
